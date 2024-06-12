@@ -28,24 +28,24 @@
   
     <div id="navbarBasicExample" class="navbar-menu carolina">
       <div class="navbar-start carolina">
-        <a class="navbar-item has-text-weight-bold is-size-4 is-size-6-touch aboreto-regular" href="index.html">
+        <a class="navbar-item has-text-weight-bold has-text-black is-size-4 is-size-6-touch aboreto-regular" href="index.html">
           Home
         </a>
   
-        <a class="navbar-item has-text-weight-bold is-size-4 is-size-6-touch aboreto-regular" href="about.html">
+        <a class="navbar-item has-text-weight-bold has-text-black is-size-4 is-size-6-touch aboreto-regular" href="about.html">
           About
         </a>
 
-        <a class="navbar-item has-text-weight-bold is-size-4 is-size-6-touch aboreto-regular" href="gallery.html">
+        <a class="navbar-item has-text-weight-bold has-text-black is-size-4 is-size-6-touch aboreto-regular" href="gallery.html">
           Gallery
         </a>
 
-        <a class="navbar-item has-text-weight-bold is-size-4 is-size-6-touch aboreto-regular" href="resources.html">
+        <a class="navbar-item has-text-weight-bold has-text-black is-size-4 is-size-6-touch aboreto-regular" href="resources.html">
           Resources
         </a>
   
         <div class="navbar-item has-dropdown is-hoverable">
-          <a class="navbar-link has-text-weight-bold is-size-4 is-size-6-touch aboreto-regular">
+          <a class="navbar-link has-text-weight-bold has-text-black is-size-4 is-size-6-touch aboreto-regular">
             More
           </a>
   
@@ -162,6 +162,29 @@
         </div>
       </footer>
     <script src="script.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+  
+        // Get all "navbar-burger" elements
+        const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+  
+        // Add a click event on each of them
+        $navbarBurgers.forEach( el => {
+          el.addEventListener('click', () => {
+  
+            // Get the target from the "data-target" attribute
+            const target = el.dataset.target;
+            const $target = document.getElementById(target);
+  
+            // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+            el.classList.toggle('is-active');
+            $target.classList.toggle('is-active');
+  
+          });
+        });
+  
+      });
+  </script>
 
     <!-- Need a Logo for Favicon -->
 </body>

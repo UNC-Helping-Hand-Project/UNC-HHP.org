@@ -141,6 +141,9 @@ li a:hover {
     .indexright {
         padding-right: 50px;
     }
+    #banner { 
+        display: none;
+    }
   }
 
 .rightpad {
