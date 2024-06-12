@@ -101,6 +101,10 @@ li a:hover {
     color: #BAA87B;
 }
 
+.darktext {
+    color: #27292d;
+}
+
 .space {
     border-bottom: 1px solid slategray;
     padding: 20px 0px;
@@ -123,7 +127,7 @@ li a:hover {
 }
 
 .indexright {
-    padding-left: 100px;
+    padding-right: 100px;
 }
 
 .toppad {
@@ -152,11 +156,8 @@ section:last-child {
 }
 
 .committee {
-    font-weight: 100;
-    color: slategray;
     font-size: 3rem;
     padding: 30px;
-    font-family: "IBM Plex Sans", sans-serif;
 }
 
 .statements {
