@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,300;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Aboreto&display=swap");
+
+/* .hero-image {
+    background-image: url("images/grouppic.JPEG");
+  } */
+
+  body, html {
+    height: 100%;
+    font-family: "IBM Plex Sans", sans-serif;
+}
+
+.aboreto-regular {
+    font-family: "Aboreto", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+.blueback {
+    background-color: #dde5f5;
+}
+
+.greyback {
+    background-color: #4d5054;
+}
+
+/* The hero image */
+.hero-image {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: url("images/grouppic.JPEG");
+
+  /* Set a specific height */
+  height: 100%;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+
+  .main-text {
+    color: white;
+    text-shadow: 10px 10px 12px #29211b;
+}
+
+.headul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #4B9CD3;
+}
+
+.headli {
+    float: left;
+}
+  
+.heada {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: medium;
+}
+  
+  /* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #91cdf5;
+}
+
+.whitetext {
+    color: white;
+}
+
+.centered {
+    text-align: center;
+}
+
+.carolina {
+    background-color: #7BAFD4;
+}
+
+.unctext {
+    color: #7BAFD4;
+}
+
+.gold {
+    color: #BAA87B;
+}
+
+.space {
+    border-bottom: 1px solid slategray;
+    padding: 20px 0px;
+}
+
+.pad {
+    padding: 15px 0px;
+}
+
+.sectionpad {
+    padding: 50px 0px 50px 0px;
+}
+
+.leftpad {
+    padding-left: 30px;
+}
+
+.indexleft {
+    padding-left: 100px;
+}
+
+.indexright {
+    padding-left: 100px;
+}
+
+.toppad {
+    padding-top: 30px;
+}
+
+@media only screen and (max-width: 767px) {
+    .indexleft {
+        padding-left: 50px;
+    }
+    .indexright {
+        padding-right: 50px;
+    }
+  }
+
+.rightpad {
+    padding-right: 30px;
+}
+
+.topBorder {
+    border-top: 1px solid slategray;
+    padding: 20px 0px;
+}
+section:last-child {
+    border: none;
+}
+
+.committee {
+    font-weight: 100;
+    color: slategray;
+    font-size: 3rem;
+    padding: 30px;
+    font-family: "IBM Plex Sans", sans-serif;
+}
+
+.statements {
+    font-weight: 100;
+    color: rgb(0, 0, 0);
+    font-size: 3rem;
+    font-family: "IBM Plex Sans", sans-serif;
+}
+
+iframe {
+    height: 700px;
+}
+
+.navbar-menu:hover {
+    background-color: #7BAFD4;
+}
+
+.large {
+    font-size: 4rem;
+}
+
+.plex {
+    font-family: "IBM Plex Sans", sans-serif;
+}
+
+.is-vcentered {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center; /* used this for multiple child */
+    align-items: center; /* if an only child */
+  }
+
+  #banner {
+    position: relative;
+    height:500px;
+    width:100%;
+    overflow: hidden;
+}
+#videobcg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    height:auto;
+    width:auto;
+    z-index: -100;
+}
