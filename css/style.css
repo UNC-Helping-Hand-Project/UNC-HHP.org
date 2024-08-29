@@ -76,7 +76,8 @@
     display: block;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 0.875rem 1rem;
+    /* padding: 14px 16px; */
     text-decoration: none;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: medium;
@@ -113,39 +114,39 @@
 
 .space {
     /* border-bottom: 1px solid slategray; */
-    padding: 20px 0px;
+    padding: 1.25rem 0rem;
 }
 
 .pad {
-    padding: 15px 0px;
+    padding: 0.938rem 0rem;
 }
 
 .sectionpad {
-    padding: 50px 0px 50px 0px;
+    padding: 3.125rem 0rem 3.125rem 0rem;
 }
 
 .leftpad {
-    padding-left: 30px;
+    padding-left: 1.875rem;
 }
 
 .indexleft {
-    padding-left: 100px;
+    padding-left: 6.25rem;
 }
 
 .indexright {
-    padding-right: 100px;
+    padding-right: 6.25rem;
 }
 
 .toppad {
-    padding-top: 30px;
+    padding-top: 1.875rem;
 }
 
 @media only screen and (max-width: 767px) {
     .indexleft {
-        padding-left: 50px;
+        padding-left: 3.125rem;
     }
     .indexright {
-        padding-right: 50px;
+        padding-right: 3.125rem;
     }
     #banner { 
         display: none;
@@ -153,7 +154,7 @@
   }
 
 .rightpad {
-    padding-right: 30px;
+    padding-right: 1.875rem;
 }
 
 .topBorder {
