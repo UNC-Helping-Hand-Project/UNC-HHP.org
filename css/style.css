@@ -165,6 +165,13 @@ li a:hover {
     padding: 20px 0px;
 }
 
+.horizontaldivider {
+    border-top: 2px solid #9ECEF1;
+    padding: 20px 0px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
 section:last-child {
     border: none;
 }
@@ -230,10 +237,5 @@ img {
     #resource {
         display: none;
     }
-}
-
-hr {
-    margin: auto;
-    width: 70%;
 }
 
