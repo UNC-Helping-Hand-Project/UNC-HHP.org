@@ -225,3 +225,9 @@ iframe {
 img {
     max-width: 100%;
   }
+
+  @media only screen and (min-width: 768px) {
+    #resource {
+        display: none;
+    }
+}
