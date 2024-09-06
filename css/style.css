@@ -231,3 +231,9 @@ img {
         display: none;
     }
 }
+
+hr {
+    margin: auto;
+    width: 70%;
+}
+
