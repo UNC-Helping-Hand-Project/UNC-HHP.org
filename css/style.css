@@ -221,3 +221,7 @@ iframe {
     width: auto;
     z-index: -100;
 }
+
+img {
+    max-width: 100%;
+  }
