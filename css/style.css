@@ -243,3 +243,9 @@ img {
     }
 }
 
+@media only screen and (max-width: 1024px) {
+    .mobileimage {
+        width: 10.313 rem;
+        height: 10.313 rem;
+    }
+}
