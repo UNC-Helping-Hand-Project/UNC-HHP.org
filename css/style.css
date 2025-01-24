@@ -249,3 +249,9 @@ img {
         height: 10.313 rem;
     }
 }
+
+.hero-body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
