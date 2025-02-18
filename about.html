@@ -1,291 +1,514 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
+    <head>
+        <link rel="icon" href="images/hhp_logo-nobg.png" type="image/x-icon" />
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=0"
+        />
+        <title>UNC HHP</title>
+        <link href="css/style.css" rel="stylesheet" type="text/css" />
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/bulma@0.9.0/css/bulma.min.css"
+        />
+        <link rel="stylesheet" href="https://use.typekit.net/gtn1hsl.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bulma-social@1/bin/bulma-social.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css"
+        />
+    </head>
 
-<head>
-  <link rel="icon" href="images/hhp_logo-nobg.png" type="image/x-icon">
-  <meta charset="utf-8">
-  <meta name="viewport"
-    content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=0">
-  <title>UNC HHP</title>
-  <link href="css/style.css" rel="stylesheet" type="text/css" />
-  <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.0/css/bulma.min.css" />
-  <link rel="stylesheet" href="https://use.typekit.net/gtn1hsl.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-social@1/bin/bulma-social.min.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css" />
-</head>
+    <body>
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="index.html"
+                    ><img
+                        src="images/hhp_logo-nobg.png"
+                        alt="HHP Logo"
+                        width="30"
+                        height="30"
+                /></a>
 
-<body>
-  <nav class="navbar" role="navigation" aria-label="main navigation">
-    <div class="navbar-brand">
-      <a class="navbar-item" href="index.html"><img src="images/hhp_logo-nobg.png" alt="HHP Logo" width="30"
-          height="30"></a>
+                <a
+                    role="button"
+                    class="navbar-burger"
+                    aria-label="menu"
+                    aria-expanded="false"
+                    data-target="navbarBasicExample"
+                >
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
 
-      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-      </a>
-    </div>
+            <div id="navbarBasicExample" class="navbar-menu">
+                <div class="navbar-start">
+                    <a
+                        class="navbar-item has-text-weight-bold has-text-black is-size-4 is-size-6-touch aboreto-regular"
+                        href="index.html"
+                    >
+                        Home
+                    </a>
 
-    <div id="navbarBasicExample" class="navbar-menu">
-      <div class="navbar-start">
-        <a class="navbar-item has-text-weight-bold has-text-black is-size-4 is-size-6-touch aboreto-regular"
-          href="index.html">
-          Home
-        </a>
+                    <a
+                        class="navbar-item has-text-weight-bold has-text-black is-size-4 is-size-6-touch aboreto-regular"
+                        href="about.html"
+                    >
+                        About
+                    </a>
 
-        <a class="navbar-item has-text-weight-bold has-text-black is-size-4 is-size-6-touch aboreto-regular"
-          href="about.html">
-          About
-        </a>
+                    <a
+                        class="navbar-item has-text-weight-bold has-text-black is-size-4 is-size-6-touch aboreto-regular"
+                        href="gallery.html"
+                    >
+                        Gallery
+                    </a>
 
-        <a class="navbar-item has-text-weight-bold has-text-black is-size-4 is-size-6-touch aboreto-regular"
-          href="gallery.html">
-          Gallery
-        </a>
+                    <a
+                        class="navbar-item has-text-weight-bold has-text-black is-size-4 is-size-6-touch aboreto-regular"
+                        href="https://docs.google.com/forms/d/e/1FAIpQLSfXn4zYY2TCEXNMtoSDDjouHPYukdl48eiyOZNS9kFxqfe0jw/viewform"
+                    >
+                        Request A Device
+                    </a>
 
-        <a class="navbar-item has-text-weight-bold has-text-black is-size-4 is-size-6-touch aboreto-regular"
-          href="resources.html">
-          Resources
-        </a>
+                    <a
+                        class="navbar-item has-text-weight-bold has-text-black is-size-4 is-size-6-touch aboreto-regular"
+                        href="resources.html"
+                    >
+                        Resources
+                    </a>
 
-        <div class="navbar-item has-dropdown is-hoverable">
-          <a class="navbar-link has-text-weight-bold has-text-black is-size-4 is-size-6-touch aboreto-regular">
-            More
-          </a>
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a
+                            class="navbar-link has-text-weight-bold has-text-black is-size-4 is-size-6-touch aboreto-regular"
+                        >
+                            More
+                        </a>
 
-          <div class="navbar-dropdown">
-            <a class="navbar-item aboreto-regular has-text-weight-bold" href="involved.html">
-              Get Involved
-            </a>
-            <a class="navbar-item is-selected aboreto-regular has-text-weight-bold" href="contact.html">
-              Contact Us
-            </a>
-            <hr class="navbar-divider">
-            <a class="navbar-item aboreto-regular has-text-weight-bold" href="donate.html">
-              Donate
-            </a>
-          </div>
-        </div>
-      </div>
+                        <div class="navbar-dropdown">
+                            <a
+                                class="navbar-item aboreto-regular has-text-weight-bold"
+                                href="involved.html"
+                            >
+                                Get Involved
+                            </a>
+                            <a
+                                class="navbar-item is-selected aboreto-regular has-text-weight-bold"
+                                href="contact.html"
+                            >
+                                Contact Us
+                            </a>
+                            <hr class="navbar-divider" />
+                            <a
+                                class="navbar-item aboreto-regular has-text-weight-bold"
+                                href="donate.html"
+                            >
+                                Donate
+                            </a>
+                        </div>
+                    </div>
+                </div>
 
-      <div class="navbar-end">
-        <div class="navbar-item">
-          <div class="buttons">
-            <a class="button is-medium is-instagram" href="https://www.instagram.com/hhp_unc/">
-              <span class="icon">
-                <i class="fab fa-instagram fa-lg"></i>
-              </span>
-            </a>
-            <a href="https://www.facebook.com/hhp.unc.1" class="button is-medium is-facebook">
-              <span class="icon">
-                <i class="fab fa-facebook-f fa-lg"></i>
-              </span>
-            </a>
-            <a href="https://twitter.com/hand_unc" class="button is-medium is-twitter">
-              <span class="icon">
-                <i class="fab fa-twitter fa-lg"></i>
-              </span>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </nav>
+                <div class="navbar-end">
+                    <div class="navbar-item">
+                        <div class="buttons">
+                            <a
+                                class="button is-medium is-instagram"
+                                href="https://www.instagram.com/hhp_unc/"
+                            >
+                                <span class="icon">
+                                    <i class="fab fa-instagram fa-lg"></i>
+                                </span>
+                            </a>
+                            <a
+                                href="https://www.facebook.com/hhp.unc.1"
+                                class="button is-medium is-facebook"
+                            >
+                                <span class="icon">
+                                    <i class="fab fa-facebook-f fa-lg"></i>
+                                </span>
+                            </a>
+                            <a
+                                href="https://twitter.com/hand_unc"
+                                class="button is-medium is-twitter"
+                            >
+                                <span class="icon">
+                                    <i class="fab fa-twitter fa-lg"></i>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
 
-  <section class="sectionpad darkback">
-    <h1 class="committee aboreto-regular gold has-text-weight-bold is-size-3-touch">Who Are We?</h1>
-    <h3 class="indexleft indexright plex has-text-white is-size-5 is-size-6-touch">At The
-      Helping Hand Project, we are dedicated
-      to championing the limb difference community and equipping individuals with the knowledge and tools
-      to make a positive impact.</h3>
-    <h3 class="pad indexleft indexright plex has-text-white is-size-5 is-size-6-touch">Leveraging the power of 3D
-      printing, we strive to provide children with specially
-      designed, cost-free recreational prosthetic devices. Our mission extends beyond prosthetic—we foster
-      a sense of belonging by organizing community events that unite children with limb differences, reassuring
-      them that they are never alone.</h3>
-    <p class="indexleft is-size-3 is-size-5-touch has-text-weight-bold gold aboreto-regular">Our Impact</p>
-    <div class="pad">
-      <h2 class="indexleft indexright plex has-text-white is-size-5 is-size-6-touch">Blurb about number of devices,
-        families, and
-        hosting family events</h2>
-    </div>
-    <div class="has-text-centered ml-6 mr-6">
-      <img class="smallImg" src="images/group_2024.jpg">
-    </div>
-  </section>
+        <section class="sectionpad darkback">
+            <h1
+                class="committee aboreto-regular gold has-text-weight-bold is-size-3-touch"
+            >
+                Who Are We?
+            </h1>
+            <h3
+                class="indexleft indexright plex has-text-white is-size-5 is-size-6-touch"
+            >
+                At The Helping Hand Project, we are dedicated to championing the
+                limb difference community and equipping individuals with the
+                knowledge and tools to make a positive impact.
+            </h3>
+            <h3
+                class="pad indexleft indexright plex has-text-white is-size-5 is-size-6-touch"
+            >
+                Leveraging the power of 3D printing, we strive to provide
+                children with specially designed, cost-free recreational
+                prosthetic devices. Our mission extends beyond prosthetic—we
+                foster a sense of belonging by organizing community events that
+                unite children with limb differences, reassuring them that they
+                are never alone.
+            </h3>
+            <p
+                class="indexleft is-size-3 is-size-5-touch has-text-weight-bold gold aboreto-regular"
+            >
+                Our Impact
+            </p>
+            <div class="pad">
+                <h2
+                    class="indexleft indexright plex has-text-white is-size-5 is-size-6-touch"
+                >
+                    Blurb about number of devices, families, and hosting family
+                    events
+                </h2>
+            </div>
+            <div class="has-text-centered ml-6 mr-6">
+                <img class="smallImg" src="images/group_2024.jpg" />
+            </div>
+        </section>
 
-  <!-- Executive Team Introductions -->
-  <section class="space">
-    <h1 class="committee aboreto-regular darktext has-text-weight-bold is-size-3-touch">Meet our Executive Team</h1>
+        <!-- Executive Team Introductions -->
+        <section class="space">
+            <h1
+                class="committee aboreto-regular darktext has-text-weight-bold is-size-3-touch"
+            >
+                Meet our Executive Team
+            </h1>
 
-    <!-- Row 1 -->
+            <!-- Row 1 -->
 
-    <div class="columns">
-      <div class="column"></div>
-      <div class="column ml-6 mr-6">
-        <figure class="mobileimage">
-          <img src="images/headshots/bailey.png" alt="Bailey profile pic" />
-        </figure>
-        <figcaption class="mt-2 is-size-5 is-size-6-touch has-text-weight-bold darktext">Bailey Watson</figcaption>
-        <div>
-          <p class="is-size-5 is-size-6-touch darktext"><em>President</em></p>
-          <p class="is-size-6 is-size-7-touch">Junior</p>
-          <p class="is-size-6 is-size-7-touch">Biology and Global Studies</p>
-        </div>
-      </div>
-      <div class="column"></div>
-    </div>
+            <div class="columns">
+                <div class="column"></div>
+                <div class="column ml-6 mr-6">
+                    <figure class="mobileimage">
+                        <img
+                            src="images/headshots/bailey.png"
+                            alt="Bailey profile pic"
+                        />
+                    </figure>
+                    <figcaption
+                        class="mt-2 is-size-5 is-size-6-touch has-text-weight-bold darktext"
+                    >
+                        Bailey Watson
+                    </figcaption>
+                    <div>
+                        <p class="is-size-5 is-size-6-touch darktext">
+                            <em>President</em>
+                        </p>
+                        <p class="is-size-6 is-size-7-touch">Junior</p>
+                        <p class="is-size-6 is-size-7-touch">
+                            Biology and Global Studies
+                        </p>
+                    </div>
+                </div>
+                <div class="column"></div>
+            </div>
 
-    <!-- Row 2 -->
+            <!-- Row 2 -->
 
-    <div class="columns">
-      <div class="column ml-6 mr-6">
-        <figure class="mobileimage">
-          <img src="images/headshots/jake.jpg" alt="Jake profile pic" />
-        </figure>
-        <figcaption class="mt-2 is-size-5 is-size-6-touch has-text-weight-bold darktext">Jake Rose</figcaption>
-        <div>
-          <p class="is-size-5 is-size-6-touch darktext"><em>Vice President</em></p>
-          <p class="is-size-6 is-size-7-touch">Junior</p>
-          <p class="is-size-6 is-size-7-touch">Biomedical Engineering | Chemistry and Neuroscience Minors</p>
-        </div>
-      </div>
-      <div class="column ml-6 mr-6">
-        <figure class="mobileimage">
-          <img src="images/headshots/celine.jpg" alt="Celine profile pic" />
-        </figure>
-        <figcaption class="mt-2 is-size-5 is-size-6-touch has-text-weight-bold darktext">Celine Keles</figcaption>
-        <div>
-          <p class="is-size-5 is-size-6-touch darktext"><em>Secretary</em></p>
-          <p class="is-size-6 is-size-7-touch">Junior</p>
-          <p class="is-size-6 is-size-7-touch">Neuroscience and Statistics</p>
-        </div>
-      </div>
-      <div class="column ml-6 mr-6">
-        <figure class="mobileimage">
-          <img src="images/headshots/mackenzie.png" alt="Mackenzie profile pic" />
-        </figure>
-        <figcaption class="mt-2 is-size-5 is-size-6-touch has-text-weight-bold darktext">Mackenzie Cole</figcaption>
-        <div>
-          <p class="is-size-5 is-size-6-touch darktext"><em>Treasurer</em></p>
-          <p class="is-size-6 is-size-7-touch">Junior</p>
-          <p class="is-size-6 is-size-7-touch">Biomedical Engineering</p>
-        </div>
-      </div>
-      <div class="column ml-6 mr-6">
-        <figure class="mobileimage">
-          <img src="images/headshots/dexter.jpg" alt="Dexter profile pic" />
-        </figure>
-        <figcaption class="mt-2 is-size-5 is-size-6-touch has-text-weight-bold darktext">Dexter Cerrone</figcaption>
-        <div>
-          <p class="is-size-5 is-size-6-touch darktext"><em>Design Chair</em></p>
-          <p class="is-size-6 is-size-7-touch">Junior</p>
-          <p class="is-size-6 is-size-7-touch">Biochemistry and Computer Science</p>
-        </div>
-      </div>
-    </div>
+            <div class="columns">
+                <div class="column ml-6 mr-6">
+                    <figure class="mobileimage">
+                        <img
+                            src="images/headshots/jake.jpg"
+                            alt="Jake profile pic"
+                        />
+                    </figure>
+                    <figcaption
+                        class="mt-2 is-size-5 is-size-6-touch has-text-weight-bold darktext"
+                    >
+                        Jake Rose
+                    </figcaption>
+                    <div>
+                        <p class="is-size-5 is-size-6-touch darktext">
+                            <em>Vice President</em>
+                        </p>
+                        <p class="is-size-6 is-size-7-touch">Junior</p>
+                        <p class="is-size-6 is-size-7-touch">
+                            Biomedical Engineering | Chemistry and Neuroscience
+                            Minors
+                        </p>
+                    </div>
+                </div>
+                <div class="column ml-6 mr-6">
+                    <figure class="mobileimage">
+                        <img
+                            src="images/headshots/celine.jpg"
+                            alt="Celine profile pic"
+                        />
+                    </figure>
+                    <figcaption
+                        class="mt-2 is-size-5 is-size-6-touch has-text-weight-bold darktext"
+                    >
+                        Celine Keles
+                    </figcaption>
+                    <div>
+                        <p class="is-size-5 is-size-6-touch darktext">
+                            <em>Secretary</em>
+                        </p>
+                        <p class="is-size-6 is-size-7-touch">Junior</p>
+                        <p class="is-size-6 is-size-7-touch">
+                            Neuroscience and Statistics
+                        </p>
+                    </div>
+                </div>
+                <div class="column ml-6 mr-6">
+                    <figure class="mobileimage">
+                        <img
+                            src="images/headshots/mackenzie.png"
+                            alt="Mackenzie profile pic"
+                        />
+                    </figure>
+                    <figcaption
+                        class="mt-2 is-size-5 is-size-6-touch has-text-weight-bold darktext"
+                    >
+                        Mackenzie Cole
+                    </figcaption>
+                    <div>
+                        <p class="is-size-5 is-size-6-touch darktext">
+                            <em>Treasurer</em>
+                        </p>
+                        <p class="is-size-6 is-size-7-touch">Junior</p>
+                        <p class="is-size-6 is-size-7-touch">
+                            Biomedical Engineering
+                        </p>
+                    </div>
+                </div>
+                <div class="column ml-6 mr-6">
+                    <figure class="mobileimage">
+                        <img
+                            src="images/headshots/dexter.jpg"
+                            alt="Dexter profile pic"
+                        />
+                    </figure>
+                    <figcaption
+                        class="mt-2 is-size-5 is-size-6-touch has-text-weight-bold darktext"
+                    >
+                        Dexter Cerrone
+                    </figcaption>
+                    <div>
+                        <p class="is-size-5 is-size-6-touch darktext">
+                            <em>Design Chair</em>
+                        </p>
+                        <p class="is-size-6 is-size-7-touch">Junior</p>
+                        <p class="is-size-6 is-size-7-touch">
+                            Biochemistry and Computer Science
+                        </p>
+                    </div>
+                </div>
+            </div>
 
-    <!-- Row 3 -->
+            <!-- Row 3 -->
 
-    <div class="columns">
-      <div class="column ml-6 mr-6">
-        <figure class="mobileimage">
-          <img src="images/headshots/shok.jpg" alt="Shokhjahon profile pic" />
-        </figure>
-        <figcaption class="mt-2 is-size-5 is-size-6-touch has-text-weight-bold darktext">Shokhjahon Berdiyorov</figcaption>
-        <div>
-          <p class="is-size-5 is-size-6-touch darktext"><em>Case Lead</em></p>
-          <p class="is-size-6 is-size-7-touch">Sophomore</p>
-          <p class="is-size-6 is-size-7-touch">Biomedical Engineering</p>
-        </div>
-      </div>
-      <div class="column ml-6 mr-6">
-        <figure class="mobileimage">
-          <img src="images/headshots/akshay.jpg" alt="Akshay profile pic" />
-        </figure>
-        <figcaption class="mt-2 is-size-5 is-size-6-touch has-text-weight-bold darktext">Akshay Elango</figcaption>
-        <div>
-          <p class="is-size-5 is-size-6-touch darktext"><em>Design Team Lead</em></p>
-          <p class="is-size-6 is-size-7-touch">Sophomore</p>
-          <p class="is-size-6 is-size-7-touch">Biomedical Engineering | Business Minor</p>
-        </div>
-      </div>
-      <div class="column ml-6 mr-6">
-        <figure class="mobileimage">
-          <img src="images/headshots/kabir.jpg" alt="Kabir profile pic" />
-        </figure>
-        <figcaption class="mt-2 is-size-5 is-size-6-touch has-text-weight-bold darktext">Kabir Dewan</figcaption>
-        <div>
-          <p class="is-size-5 is-size-6-touch darktext"><em>Innovation Team Lead</em></p>
-          <p class="is-size-6 is-size-7-touch">Senior</p>
-          <p class="is-size-6 is-size-7-touch">Biomedical Engineering</p>
-        </div>
-      </div>
-      <div class="column ml-6 mr-6">
-        <figure class="mobileimage">
-          <img src="images/headshots/kiera.jpg" alt="Kiera profile pic" />
-        </figure>
-        <figcaption class="mt-2 is-size-5 is-size-6-touch has-text-weight-bold darktext">Kiera McWilliams</figcaption>
-        <div>
-          <p class="is-size-5 is-size-6-touch darktext"><em>Support Chair</em></p>
-          <p class="is-size-6 is-size-7-touch">Junior</p>
-          <p class="is-size-6 is-size-7-touch">Health Policy and Management</p>
-        </div>
-      </div>
-    </div>
+            <div class="columns">
+                <div class="column ml-6 mr-6">
+                    <figure class="mobileimage">
+                        <img
+                            src="images/headshots/shok.jpg"
+                            alt="Shokhjahon profile pic"
+                        />
+                    </figure>
+                    <figcaption
+                        class="mt-2 is-size-5 is-size-6-touch has-text-weight-bold darktext"
+                    >
+                        Shokhjahon Berdiyorov
+                    </figcaption>
+                    <div>
+                        <p class="is-size-5 is-size-6-touch darktext">
+                            <em>Case Lead</em>
+                        </p>
+                        <p class="is-size-6 is-size-7-touch">Sophomore</p>
+                        <p class="is-size-6 is-size-7-touch">
+                            Biomedical Engineering
+                        </p>
+                    </div>
+                </div>
+                <div class="column ml-6 mr-6">
+                    <figure class="mobileimage">
+                        <img
+                            src="images/headshots/akshay.jpg"
+                            alt="Akshay profile pic"
+                        />
+                    </figure>
+                    <figcaption
+                        class="mt-2 is-size-5 is-size-6-touch has-text-weight-bold darktext"
+                    >
+                        Akshay Elango
+                    </figcaption>
+                    <div>
+                        <p class="is-size-5 is-size-6-touch darktext">
+                            <em>Design Team Lead</em>
+                        </p>
+                        <p class="is-size-6 is-size-7-touch">Sophomore</p>
+                        <p class="is-size-6 is-size-7-touch">
+                            Biomedical Engineering | Business Minor
+                        </p>
+                    </div>
+                </div>
+                <div class="column ml-6 mr-6">
+                    <figure class="mobileimage">
+                        <img
+                            src="images/headshots/kabir.jpg"
+                            alt="Kabir profile pic"
+                        />
+                    </figure>
+                    <figcaption
+                        class="mt-2 is-size-5 is-size-6-touch has-text-weight-bold darktext"
+                    >
+                        Kabir Dewan
+                    </figcaption>
+                    <div>
+                        <p class="is-size-5 is-size-6-touch darktext">
+                            <em>Innovation Team Lead</em>
+                        </p>
+                        <p class="is-size-6 is-size-7-touch">Senior</p>
+                        <p class="is-size-6 is-size-7-touch">
+                            Biomedical Engineering
+                        </p>
+                    </div>
+                </div>
+                <div class="column ml-6 mr-6">
+                    <figure class="mobileimage">
+                        <img
+                            src="images/headshots/kiera.jpg"
+                            alt="Kiera profile pic"
+                        />
+                    </figure>
+                    <figcaption
+                        class="mt-2 is-size-5 is-size-6-touch has-text-weight-bold darktext"
+                    >
+                        Kiera McWilliams
+                    </figcaption>
+                    <div>
+                        <p class="is-size-5 is-size-6-touch darktext">
+                            <em>Support Chair</em>
+                        </p>
+                        <p class="is-size-6 is-size-7-touch">Junior</p>
+                        <p class="is-size-6 is-size-7-touch">
+                            Health Policy and Management
+                        </p>
+                    </div>
+                </div>
+            </div>
 
-    <!-- Row 4 -->
+            <!-- Row 4 -->
 
-    <div class="columns">
-      <div class="column ml-6 mr-6">
-        <figure class="mobileimage">
-          <img src="images/headshots/isha.jpg" alt="Isha profile pic" />
-        </figure>
-        <figcaption class="mt-2 is-size-5 is-size-6-touch has-text-weight-bold darktext">Isha Mistry</figcaption>
-        <div>
-          <p class="is-size-5 is-size-6-touch darktext"><em>Support Chair</em></p>
-          <p class="is-size-6 is-size-7-touch">Junior</p>
-          <p class="is-size-6 is-size-7-touch">Health Policy and Management | Chemistry Minor</p>
-        </div>
-      </div>
-      <div class="column ml-6 mr-6">
-        <figure class="mobileimage">
-          <img src="images/headshots/karson.jpg" alt="Karson profile pic" />
-        </figure>
-        <figcaption class="mt-2 is-size-5 is-size-6-touch has-text-weight-bold darktext">Karson Van Scoyoc</figcaption>
-        <div>
-          <p class="is-size-5 is-size-6-touch darktext"><em>Outreach Chair</em></p>
-          <p class="is-size-6 is-size-7-touch">Junior</p>
-          <p class="is-size-6 is-size-7-touch">Neuroscience | Religion Minor</p>
-        </div>
-      </div>
-      <div class="column ml-6 mr-6">
-        <figure class="mobileimage">
-          <img src="images/headshots/shubhi.jpg" alt="Shubhi profile pic" />
-        </figure>
-        <figcaption class="mt-2 is-size-5 is-size-6-touch has-text-weight-bold darktext">Shubhi Mathur</figcaption>
-        <div>
-          <p class="is-size-5 is-size-6-touch darktext"><em>Instructional Lead</em></p>
-          <p class="is-size-6 is-size-7-touch">Senior</p>
-          <p class="is-size-6 is-size-7-touch">Biomedical Engineering</p>
-        </div>
-      </div>
-      <div class="column ml-6 mr-6">
-        <figure class="mobileimage">
-          <img src="images/headshots/alli.jpg" alt="Alli profile pic" />
-        </figure>
-        <figcaption class="mt-2 is-size-5 is-size-6-touch has-text-weight-bold darktext">Alli Pridmore</figcaption>
-        <div>
-          <p class="is-size-5 is-size-6-touch darktext"><em>Instructional Lead</em></p>
-          <p class="is-size-6 is-size-7-touch">Junior</p>
-          <p class="is-size-6 is-size-7-touch">Biomedical Engineering | Neuroscience Minor</p>
-        </div>
-      </div>
-    </div>
-  </section>
+            <div class="columns">
+                <div class="column ml-6 mr-6">
+                    <figure class="mobileimage">
+                        <img
+                            src="images/headshots/isha.jpg"
+                            alt="Isha profile pic"
+                        />
+                    </figure>
+                    <figcaption
+                        class="mt-2 is-size-5 is-size-6-touch has-text-weight-bold darktext"
+                    >
+                        Isha Mistry
+                    </figcaption>
+                    <div>
+                        <p class="is-size-5 is-size-6-touch darktext">
+                            <em>Support Chair</em>
+                        </p>
+                        <p class="is-size-6 is-size-7-touch">Junior</p>
+                        <p class="is-size-6 is-size-7-touch">
+                            Health Policy and Management | Chemistry Minor
+                        </p>
+                    </div>
+                </div>
+                <div class="column ml-6 mr-6">
+                    <figure class="mobileimage">
+                        <img
+                            src="images/headshots/karson.jpg"
+                            alt="Karson profile pic"
+                        />
+                    </figure>
+                    <figcaption
+                        class="mt-2 is-size-5 is-size-6-touch has-text-weight-bold darktext"
+                    >
+                        Karson Van Scoyoc
+                    </figcaption>
+                    <div>
+                        <p class="is-size-5 is-size-6-touch darktext">
+                            <em>Outreach Chair</em>
+                        </p>
+                        <p class="is-size-6 is-size-7-touch">Junior</p>
+                        <p class="is-size-6 is-size-7-touch">
+                            Neuroscience | Religion Minor
+                        </p>
+                    </div>
+                </div>
+                <div class="column ml-6 mr-6">
+                    <figure class="mobileimage">
+                        <img
+                            src="images/headshots/shubhi.jpg"
+                            alt="Shubhi profile pic"
+                        />
+                    </figure>
+                    <figcaption
+                        class="mt-2 is-size-5 is-size-6-touch has-text-weight-bold darktext"
+                    >
+                        Shubhi Mathur
+                    </figcaption>
+                    <div>
+                        <p class="is-size-5 is-size-6-touch darktext">
+                            <em>Instructional Lead</em>
+                        </p>
+                        <p class="is-size-6 is-size-7-touch">Senior</p>
+                        <p class="is-size-6 is-size-7-touch">
+                            Biomedical Engineering
+                        </p>
+                    </div>
+                </div>
+                <div class="column ml-6 mr-6">
+                    <figure class="mobileimage">
+                        <img
+                            src="images/headshots/alli.jpg"
+                            alt="Alli profile pic"
+                        />
+                    </figure>
+                    <figcaption
+                        class="mt-2 is-size-5 is-size-6-touch has-text-weight-bold darktext"
+                    >
+                        Alli Pridmore
+                    </figcaption>
+                    <div>
+                        <p class="is-size-5 is-size-6-touch darktext">
+                            <em>Instructional Lead</em>
+                        </p>
+                        <p class="is-size-6 is-size-7-touch">Junior</p>
+                        <p class="is-size-6 is-size-7-touch">
+                            Biomedical Engineering | Neuroscience Minor
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-  <!-- <section class="space">
+        <!-- <section class="space">
     <h1 class="committee darktext has-text-weight-bold aboreto-regular is-size-3-touch">Committees</h1>
     <div class="has-text-centered pl-4 pr-4">
       <img src="images/hhp_logo.png">
@@ -306,90 +529,123 @@
     </div>
   </section> -->
 
-  <footer class="hero carolina">
-    <div class="hero-body">
-      <div class="container">
-        <div class="columns">
-          <div class="column is-4">
-            <div class="content">
-              <h6 class="footer_title title is-6 is-size-4 is-size-6-touch aboreto-regular has-text-weight-bold">
-                LOCATION</h6>
-              <p class="is-marginless times is-size-5 is-size-7-touch">Phillips Hall, Room 19C, 7:00-8:00 PM Every
-                Wednesday</p>
-              <p class="is-marginless times is-size-5 is-size-7-touch">Email: helpinghandprojectunc@gmail.com</p>
+        <footer class="hero carolina">
+            <div class="hero-body">
+                <div class="container">
+                    <div class="columns">
+                        <div class="column is-4">
+                            <div class="content">
+                                <h6
+                                    class="footer_title title is-6 is-size-4 is-size-6-touch aboreto-regular has-text-weight-bold"
+                                >
+                                    LOCATION
+                                </h6>
+                                <p
+                                    class="is-marginless times is-size-5 is-size-7-touch"
+                                >
+                                    Phillips Hall, Room 19C, 7:00-8:00 PM Every
+                                    Wednesday
+                                </p>
+                                <p
+                                    class="is-marginless times is-size-5 is-size-7-touch"
+                                >
+                                    Email: helpinghandprojectunc@gmail.com
+                                </p>
+                            </div>
+                        </div>
+                        <div class="column is-4" style="text-align: center">
+                            <div class="content">
+                                <div>
+                                    <h6
+                                        class="footer_title title is-6 is-size-4 is-size-6-touch aboreto-regular has-text-weight-bold"
+                                    >
+                                        HeelLife Page
+                                    </h6>
+                                    <figure class="image is-5by1">
+                                        <a
+                                            href="https://heellife.unc.edu/organization/helpinghandproject"
+                                            ><img
+                                                src="images/heellife_logo.png"
+                                        /></a>
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column is-4">
+                            <div class="content">
+                                <h6
+                                    class="footer_title title is-6 is-size-4 is-size-6-touch aboreto-regular has-text-weight-bold"
+                                >
+                                    SOCIAL MEDIA
+                                </h6>
+                                <p class="times is-size-5 is-size-7-touch">
+                                    Keep up with The Helping Hand Project UNC on
+                                    social media
+                                </p>
+                                <a
+                                    href="https://www.instagram.com/hhp_unc/"
+                                    class="button is-medium is-instagram"
+                                >
+                                    <span class="icon">
+                                        <i class="fab fa-instagram fa-lg"></i>
+                                    </span>
+                                </a>
+                                <a
+                                    href="https://www.facebook.com/hhp.unc.1"
+                                    class="button is-medium is-facebook"
+                                >
+                                    <span class="icon">
+                                        <i class="fab fa-facebook-f fa-lg"></i>
+                                    </span>
+                                </a>
+                                <a
+                                    href="https://twitter.com/hand_unc"
+                                    class="button is-medium is-twitter"
+                                >
+                                    <span class="icon">
+                                        <i class="fab fa-twitter fa-lg"></i>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="column is-4" style="text-align: center;">
-            <div class="content">
-              <div>
-                <h6 class="footer_title title is-6 is-size-4 is-size-6-touch aboreto-regular has-text-weight-bold">
-                  HeelLife Page</h6>
-                <figure class="image is-5by1">
-                  <a href="https://heellife.unc.edu/organization/helpinghandproject"><img
-                      src="images/heellife_logo.png"></a>
-                </figure>
-              </div>
+            <div class="hero-foot">
+                <div class="container has-text-centered">
+                    <p
+                        class="footer-text is-size-6 is-size-7-touch aboreto-regular has-text-weight-bold"
+                    >
+                        &copy; 2024 - The Helping Hand Project: UNC. All rights
+                        reserved. <br />
+                    </p>
+                </div>
             </div>
-          </div>
-          <div class="column is-4">
-            <div class="content">
-              <h6 class="footer_title title is-6 is-size-4 is-size-6-touch aboreto-regular has-text-weight-bold">SOCIAL
-                MEDIA</h6>
-              <p class="times is-size-5 is-size-7-touch">Keep up with The Helping Hand Project UNC on social media</p>
-              <a href="https://www.instagram.com/hhp_unc/" class="button is-medium is-instagram">
-                <span class="icon">
-                  <i class="fab fa-instagram fa-lg"></i>
-                </span>
-              </a>
-              <a href="https://www.facebook.com/hhp.unc.1" class="button is-medium is-facebook">
-                <span class="icon">
-                  <i class="fab fa-facebook-f fa-lg"></i>
-                </span>
-              </a>
-              <a href="https://twitter.com/hand_unc" class="button is-medium is-twitter">
-                <span class="icon">
-                  <i class="fab fa-twitter fa-lg"></i>
-                </span>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="hero-foot">
-      <div class="container has-text-centered">
-        <p class="footer-text is-size-6 is-size-7-touch aboreto-regular has-text-weight-bold">
-          &copy; 2024 - The Helping Hand Project: UNC. All rights reserved. <br />
-        </p>
-      </div>
-    </div>
-  </footer>
-  <script src="script.js"></script>
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
+        </footer>
+        <script src="script.js"></script>
+        <script>
+            document.addEventListener("DOMContentLoaded", () => {
+                // Get all "navbar-burger" elements
+                const $navbarBurgers = Array.prototype.slice.call(
+                    document.querySelectorAll(".navbar-burger"),
+                    0,
+                );
 
-      // Get all "navbar-burger" elements
-      const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+                // Add a click event on each of them
+                $navbarBurgers.forEach((el) => {
+                    el.addEventListener("click", () => {
+                        // Get the target from the "data-target" attribute
+                        const target = el.dataset.target;
+                        const $target = document.getElementById(target);
 
-      // Add a click event on each of them
-      $navbarBurgers.forEach(el => {
-        el.addEventListener('click', () => {
+                        // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+                        el.classList.toggle("is-active");
+                        $target.classList.toggle("is-active");
+                    });
+                });
+            });
+        </script>
 
-          // Get the target from the "data-target" attribute
-          const target = el.dataset.target;
-          const $target = document.getElementById(target);
-
-          // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
-          el.classList.toggle('is-active');
-          $target.classList.toggle('is-active');
-
-        });
-      });
-
-    });
-  </script>
-
-  <!-- Need a Logo for Favicon -->
-</body>
-
+        <!-- Need a Logo for Favicon -->
+    </body>
 </html>

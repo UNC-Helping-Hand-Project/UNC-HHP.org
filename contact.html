@@ -1,235 +1,377 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
+    <head>
+        <link rel="icon" href="images/hhp_logo-nobg.png" type="image/x-icon" />
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=0"
+        />
+        <title>UNC HHP</title>
+        <link href="css/style.css" rel="stylesheet" type="text/css" />
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/bulma@0.9.0/css/bulma.min.css"
+        />
+        <link rel="stylesheet" href="https://use.typekit.net/gtn1hsl.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bulma-social@1/bin/bulma-social.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css"
+        />
+    </head>
 
-<head>
-  <link rel="icon" href="images/hhp_logo-nobg.png" type="image/x-icon">
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=0">
-  <title>UNC HHP</title>
-  <link href="css/style.css" rel="stylesheet" type="text/css" />
-  <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.0/css/bulma.min.css" />
-  <link rel="stylesheet" href="https://use.typekit.net/gtn1hsl.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-social@1/bin/bulma-social.min.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css" />
-</head>
+    <body>
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="index.html"
+                    ><img
+                        src="images/hhp_logo-nobg.png"
+                        alt="HHP Logo"
+                        width="30"
+                        height="30"
+                /></a>
 
-<body>
-  <nav class="navbar" role="navigation" aria-label="main navigation">
-    <div class="navbar-brand">
-      <a class="navbar-item" href="index.html"><img src="images/hhp_logo-nobg.png" alt="HHP Logo" width="30"
-          height="30"></a>
-
-      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-      </a>
-    </div>
-
-    <div id="navbarBasicExample" class="navbar-menu">
-      <div class="navbar-start">
-        <a class="navbar-item has-text-weight-bold has-text-black is-size-4 is-size-6-touch aboreto-regular"
-          href="index.html">
-          Home
-        </a>
-
-        <a class="navbar-item has-text-weight-bold has-text-black is-size-4 is-size-6-touch aboreto-regular"
-          href="about.html">
-          About
-        </a>
-
-        <a class="navbar-item has-text-weight-bold has-text-black is-size-4 is-size-6-touch aboreto-regular"
-          href="gallery.html">
-          Gallery
-        </a>
-
-        <a class="navbar-item has-text-weight-bold is-size-4 has-text-black is-size-6-touch aboreto-regular"
-          href="resources.html">
-          Resources
-        </a>
-
-        <div class="navbar-item has-dropdown is-hoverable">
-          <a class="navbar-link has-text-weight-bold has-text-black is-size-4 is-size-6-touch aboreto-regular">
-            More
-          </a>
-
-          <div class="navbar-dropdown">
-            <a class="navbar-item aboreto-regular has-text-weight-bold" href="involved.html">
-              Get Involved
-            </a>
-            <a class="navbar-item is-selected aboreto-regular has-text-weight-bold" href="contact.html">
-              Contact Us
-            </a>
-            <hr class="navbar-divider">
-            <a class="navbar-item aboreto-regular has-text-weight-bold" href="donate.html">
-              Donate
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <div class="navbar-end">
-        <div class="navbar-item">
-          <div class="buttons">
-            <a class="button is-medium is-instagram" href="https://www.instagram.com/hhp_unc/">
-              <span class="icon">
-                <i class="fab fa-instagram fa-lg"></i>
-              </span>
-            </a>
-            <a href="https://www.facebook.com/hhp.unc.1" class="button is-medium is-facebook">
-              <span class="icon">
-                <i class="fab fa-facebook-f fa-lg"></i>
-              </span>
-            </a>
-            <a href="https://twitter.com/hand_unc" class="button is-medium is-twitter">
-              <span class="icon">
-                <i class="fab fa-twitter fa-lg"></i>
-              </span>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Contact Us Section -->
-  <section class="hero" id="contact-us">
-    <div class="hero-body">
-      <div class="container">
-        <div>
-          <div class="content">
-            <h4 class="title is-4 aboreto-regular is-size-5-touch">Contact Us</h4>
-          </div>
-          <h6 class="subtitle is-6 is-size-7-touch">Have any questions or want to get in contact with us?</h6>
-          <div class="columns box">
-            <form class="column" action="https://public.herotofu.com/v1/69debb50-e473-11ed-b7f5-b1477f41506c"
-              method="post" accept-charset="UTF-8">
-              <div class="field">
-                <label for="name" class="label">Name</label>
-                <div class="control">
-                  <input name="Name" id="name" class="input" type="text" placeholder="Your Name" required />
-                </div>
-              </div>
-              <div class="field">
-                <label for="email" class="label">Email</label>
-                <div class="control has-icons-left has-icons-right">
-                  <input name="Email" id="email" class="input" type="email" placeholder="Email Address" required />
-                  <span class="icon is-small is-left">
-                    <i class="fas fa-envelope"></i>
-                  </span>
-                </div>
-              </div>
-              <div class="field">
-                <label for="message" class="label">Message</label>
-                <div class="control">
-                  <textarea name="Message" id="message" class="textarea" type="text"
-                    placeholder="Type your message here..." required=""></textarea>
-                </div>
-              </div>
-              <div class="field">
-                <label class="label"></label>
-                <div class="control">
-                  <input class="button is-info" type="submit" />
-                </div>
-                <div style="text-indent:-99999px; white-space:nowrap; overflow:hidden; position:absolute;"
-                  aria-hidden="true">
-                  <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" />
-                </div>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- ./Contact Us Section -->
-
-  <!-- Deleted copied code from "request a device" section -->
-
-  <footer class="hero carolina">
-    <div class="hero-body">
-      <div class="container">
-        <div class="columns">
-          <div class="column is-4">
-            <div class="content">
-              <h6 class="footer_title title is-6 is-size-4 is-size-6-touch aboreto-regular has-text-weight-bold">
-                LOCATION</h6>
-              <p class="is-marginless times is-size-5 is-size-7-touch">Phillips Hall, Room 19C, 7:00-8:00 PM Every
-                Wednesday</p>
-              <p class="is-marginless times is-size-5 is-size-7-touch">Email: helpinghandprojectunc@gmail.com</p>
+                <a
+                    role="button"
+                    class="navbar-burger"
+                    aria-label="menu"
+                    aria-expanded="false"
+                    data-target="navbarBasicExample"
+                >
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
             </div>
-          </div>
-          <div class="column is-4" style="text-align: center;">
-            <div class="content">
-              <div>
-                <h6 class="footer_title title is-6 is-size-4 is-size-6-touch aboreto-regular has-text-weight-bold">
-                  HeelLife Page</h6>
-                <figure class="image is-5by1">
-                  <a href="https://heellife.unc.edu/organization/helpinghandproject"><img
-                      src="images/heellife_logo.png"></a>
-                </figure>
-              </div>
+
+            <div id="navbarBasicExample" class="navbar-menu">
+                <div class="navbar-start">
+                    <a
+                        class="navbar-item has-text-weight-bold has-text-black is-size-4 is-size-6-touch aboreto-regular"
+                        href="index.html"
+                    >
+                        Home
+                    </a>
+
+                    <a
+                        class="navbar-item has-text-weight-bold has-text-black is-size-4 is-size-6-touch aboreto-regular"
+                        href="about.html"
+                    >
+                        About
+                    </a>
+
+                    <a
+                        class="navbar-item has-text-weight-bold has-text-black is-size-4 is-size-6-touch aboreto-regular"
+                        href="gallery.html"
+                    >
+                        Gallery
+                    </a>
+
+                    <a
+                        class="navbar-item has-text-weight-bold has-text-black is-size-4 is-size-6-touch aboreto-regular"
+                        href="https://docs.google.com/forms/d/e/1FAIpQLSfXn4zYY2TCEXNMtoSDDjouHPYukdl48eiyOZNS9kFxqfe0jw/viewform"
+                    >
+                        Request A Device
+                    </a>
+
+                    <a
+                        class="navbar-item has-text-weight-bold is-size-4 has-text-black is-size-6-touch aboreto-regular"
+                        href="resources.html"
+                    >
+                        Resources
+                    </a>
+
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a
+                            class="navbar-link has-text-weight-bold has-text-black is-size-4 is-size-6-touch aboreto-regular"
+                        >
+                            More
+                        </a>
+
+                        <div class="navbar-dropdown">
+                            <a
+                                class="navbar-item aboreto-regular has-text-weight-bold"
+                                href="involved.html"
+                            >
+                                Get Involved
+                            </a>
+                            <a
+                                class="navbar-item is-selected aboreto-regular has-text-weight-bold"
+                                href="contact.html"
+                            >
+                                Contact Us
+                            </a>
+                            <hr class="navbar-divider" />
+                            <a
+                                class="navbar-item aboreto-regular has-text-weight-bold"
+                                href="donate.html"
+                            >
+                                Donate
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="navbar-end">
+                    <div class="navbar-item">
+                        <div class="buttons">
+                            <a
+                                class="button is-medium is-instagram"
+                                href="https://www.instagram.com/hhp_unc/"
+                            >
+                                <span class="icon">
+                                    <i class="fab fa-instagram fa-lg"></i>
+                                </span>
+                            </a>
+                            <a
+                                href="https://www.facebook.com/hhp.unc.1"
+                                class="button is-medium is-facebook"
+                            >
+                                <span class="icon">
+                                    <i class="fab fa-facebook-f fa-lg"></i>
+                                </span>
+                            </a>
+                            <a
+                                href="https://twitter.com/hand_unc"
+                                class="button is-medium is-twitter"
+                            >
+                                <span class="icon">
+                                    <i class="fab fa-twitter fa-lg"></i>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="column is-4">
-            <div class="content">
-              <h6 class="footer_title title is-6 is-size-4 is-size-6-touch aboreto-regular has-text-weight-bold">SOCIAL
-                MEDIA</h6>
-              <p class="times is-size-5 is-size-7-touch">Keep up with The Helping Hand Project UNC on social media</p>
-              <a href="https://www.instagram.com/hhp_unc/" class="button is-medium is-instagram">
-                <span class="icon">
-                  <i class="fab fa-instagram fa-lg"></i>
-                </span>
-              </a>
-              <a href="https://www.facebook.com/hhp.unc.1" class="button is-medium is-facebook">
-                <span class="icon">
-                  <i class="fab fa-facebook-f fa-lg"></i>
-                </span>
-              </a>
-              <a href="https://twitter.com/hand_unc" class="button is-medium is-twitter">
-                <span class="icon">
-                  <i class="fab fa-twitter fa-lg"></i>
-                </span>
-              </a>
+        </nav>
+
+        <!-- Contact Us Section -->
+        <section class="hero" id="contact-us">
+            <div class="hero-body">
+                <div class="container">
+                    <div>
+                        <div class="content">
+                            <h4
+                                class="title is-4 aboreto-regular is-size-5-touch"
+                            >
+                                Contact Us
+                            </h4>
+                        </div>
+                        <h6 class="subtitle is-6 is-size-7-touch">
+                            Have any questions or want to get in contact with
+                            us?
+                        </h6>
+                        <div class="columns box">
+                            <form
+                                class="column"
+                                action="https://public.herotofu.com/v1/69debb50-e473-11ed-b7f5-b1477f41506c"
+                                method="post"
+                                accept-charset="UTF-8"
+                            >
+                                <div class="field">
+                                    <label for="name" class="label">Name</label>
+                                    <div class="control">
+                                        <input
+                                            name="Name"
+                                            id="name"
+                                            class="input"
+                                            type="text"
+                                            placeholder="Your Name"
+                                            required
+                                        />
+                                    </div>
+                                </div>
+                                <div class="field">
+                                    <label for="email" class="label"
+                                        >Email</label
+                                    >
+                                    <div
+                                        class="control has-icons-left has-icons-right"
+                                    >
+                                        <input
+                                            name="Email"
+                                            id="email"
+                                            class="input"
+                                            type="email"
+                                            placeholder="Email Address"
+                                            required
+                                        />
+                                        <span class="icon is-small is-left">
+                                            <i class="fas fa-envelope"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="field">
+                                    <label for="message" class="label"
+                                        >Message</label
+                                    >
+                                    <div class="control">
+                                        <textarea
+                                            name="Message"
+                                            id="message"
+                                            class="textarea"
+                                            type="text"
+                                            placeholder="Type your message here..."
+                                            required=""
+                                        ></textarea>
+                                    </div>
+                                </div>
+                                <div class="field">
+                                    <label class="label"></label>
+                                    <div class="control">
+                                        <input
+                                            class="button is-info"
+                                            type="submit"
+                                        />
+                                    </div>
+                                    <div
+                                        style="
+                                            text-indent: -99999px;
+                                            white-space: nowrap;
+                                            overflow: hidden;
+                                            position: absolute;
+                                        "
+                                        aria-hidden="true"
+                                    >
+                                        <input
+                                            type="text"
+                                            name="_gotcha"
+                                            tabindex="-1"
+                                            autocomplete="off"
+                                        />
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="hero-foot">
-      <div class="container has-text-centered">
-        <p class="footer-text is-size-6 is-size-7-touch aboreto-regular has-text-weight-bold">
-          &copy; 2024 - The Helping Hand Project: UNC. All rights reserved. <br />
-        </p>
-      </div>
-    </div>
-  </footer>
-  <script src="script.js"></script>
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
+        </section>
+        <!-- ./Contact Us Section -->
 
-      // Get all "navbar-burger" elements
-      const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+        <!-- Deleted copied code from "request a device" section -->
 
-      // Add a click event on each of them
-      $navbarBurgers.forEach(el => {
-        el.addEventListener('click', () => {
+        <footer class="hero carolina">
+            <div class="hero-body">
+                <div class="container">
+                    <div class="columns">
+                        <div class="column is-4">
+                            <div class="content">
+                                <h6
+                                    class="footer_title title is-6 is-size-4 is-size-6-touch aboreto-regular has-text-weight-bold"
+                                >
+                                    LOCATION
+                                </h6>
+                                <p
+                                    class="is-marginless times is-size-5 is-size-7-touch"
+                                >
+                                    Phillips Hall, Room 19C, 7:00-8:00 PM Every
+                                    Wednesday
+                                </p>
+                                <p
+                                    class="is-marginless times is-size-5 is-size-7-touch"
+                                >
+                                    Email: helpinghandprojectunc@gmail.com
+                                </p>
+                            </div>
+                        </div>
+                        <div class="column is-4" style="text-align: center">
+                            <div class="content">
+                                <div>
+                                    <h6
+                                        class="footer_title title is-6 is-size-4 is-size-6-touch aboreto-regular has-text-weight-bold"
+                                    >
+                                        HeelLife Page
+                                    </h6>
+                                    <figure class="image is-5by1">
+                                        <a
+                                            href="https://heellife.unc.edu/organization/helpinghandproject"
+                                            ><img
+                                                src="images/heellife_logo.png"
+                                        /></a>
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column is-4">
+                            <div class="content">
+                                <h6
+                                    class="footer_title title is-6 is-size-4 is-size-6-touch aboreto-regular has-text-weight-bold"
+                                >
+                                    SOCIAL MEDIA
+                                </h6>
+                                <p class="times is-size-5 is-size-7-touch">
+                                    Keep up with The Helping Hand Project UNC on
+                                    social media
+                                </p>
+                                <a
+                                    href="https://www.instagram.com/hhp_unc/"
+                                    class="button is-medium is-instagram"
+                                >
+                                    <span class="icon">
+                                        <i class="fab fa-instagram fa-lg"></i>
+                                    </span>
+                                </a>
+                                <a
+                                    href="https://www.facebook.com/hhp.unc.1"
+                                    class="button is-medium is-facebook"
+                                >
+                                    <span class="icon">
+                                        <i class="fab fa-facebook-f fa-lg"></i>
+                                    </span>
+                                </a>
+                                <a
+                                    href="https://twitter.com/hand_unc"
+                                    class="button is-medium is-twitter"
+                                >
+                                    <span class="icon">
+                                        <i class="fab fa-twitter fa-lg"></i>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-foot">
+                <div class="container has-text-centered">
+                    <p
+                        class="footer-text is-size-6 is-size-7-touch aboreto-regular has-text-weight-bold"
+                    >
+                        &copy; 2024 - The Helping Hand Project: UNC. All rights
+                        reserved. <br />
+                    </p>
+                </div>
+            </div>
+        </footer>
+        <script src="script.js"></script>
+        <script>
+            document.addEventListener("DOMContentLoaded", () => {
+                // Get all "navbar-burger" elements
+                const $navbarBurgers = Array.prototype.slice.call(
+                    document.querySelectorAll(".navbar-burger"),
+                    0,
+                );
 
-          // Get the target from the "data-target" attribute
-          const target = el.dataset.target;
-          const $target = document.getElementById(target);
+                // Add a click event on each of them
+                $navbarBurgers.forEach((el) => {
+                    el.addEventListener("click", () => {
+                        // Get the target from the "data-target" attribute
+                        const target = el.dataset.target;
+                        const $target = document.getElementById(target);
 
-          // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
-          el.classList.toggle('is-active');
-          $target.classList.toggle('is-active');
+                        // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+                        el.classList.toggle("is-active");
+                        $target.classList.toggle("is-active");
+                    });
+                });
+            });
+        </script>
 
-        });
-      });
-
-    });
-  </script>
-
-  <!-- Need a Logo for Favicon -->
-</body>
-
+        <!-- Need a Logo for Favicon -->
+    </body>
 </html>
